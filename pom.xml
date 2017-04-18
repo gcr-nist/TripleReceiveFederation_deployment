@@ -7,7 +7,7 @@
 	<packaging>jar</packaging>
 
 	<properties>
-		<federation.name>TripleReceiveFederation</federation.name>
+		<federation.name>TripleFederation</federation.name>
 		<federation.version>0.0.1-SNAPSHOT</federation.version>
 		<c2w.version>0.3.0-SNAPSHOT</c2w.version>
 		<nar.version>3.3.0</nar.version>
@@ -201,13 +201,6 @@
 			</properties>
 		</profile>
 		<profile>
-			<id>TripleSend</id>
-			<properties>
-				<federate.name>TripleSend</federate.name>
-				<federate.loglevel>NORMAL</federate.loglevel>
-			</properties>
-		</profile>
-		<profile>
 			<id>FedManager</id>
 			<dependencies>
 				<dependency>
@@ -251,7 +244,7 @@
 								<argument>0</argument>
 								<argument>--lockfile</argument>
 								<argument>/home/vagrant/Projects/cpswt/__lock__</argument>
-								<argument>TripleIFederation</argument>
+								<argument>TripleFederation</argument>
 								<argument>${project.basedir}/target/classes/TripleIFederation.fed</argument>
 								<argument>${project.basedir}/target/classes/default/script.xml</argument>
 								<argument>TripleIFederation_main-Deployment1_100</argument>
@@ -362,7 +355,7 @@
 						<version>1.4.0</version>
 						<configuration>
 							<workingDirectory>${project.basedir}/target/bin-exec</workingDirectory>
-							<executable>./TripleIFederation-${federate.name}-cpp</executable>
+							<executable>./TripleFederation-${federate.name}-cpp</executable>
 							<arguments>
 								<argument>${federation.name}</argument>
 								<argument>${federate.name}</argument>
