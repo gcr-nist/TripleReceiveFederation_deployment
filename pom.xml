@@ -285,7 +285,7 @@
 								<!-- automatically creates the classpath using all project dependencies, 
 									also adding the project build directory -->
 								<classpath />
-								<argument>TripleIFederation.${federate.name}</argument>
+								<argument>${federation.name}.${federate.name}</argument>
 								<argument>${federation.name}</argument>
 								<argument>${federate.name}</argument>
 								<argument>${federate.loglevel}</argument>
